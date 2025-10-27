@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Universal — Dizayn</title>
+  <link rel="stylesheet" href="./main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./photo_2025-10-08_14-24-06.jpg">
+
+ <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#0f1720;
+      --accent:#f6c84c;
+      --muted:rgba(255,255,255,0.65);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,#050505 0%, #0b0b0b 100%);color:#fff;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+
+    .wrap{width:100%;max-width:1100px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:14px;padding:24px;display:flex;gap:28px;align-items:center;position:relative;box-shadow:0 8px 30px rgba(2,6,23,0.7)}
+
+    /* left: image */
+    .left{flex:0 0 420px;display:flex;align-items:center;justify-content:center}
+    .badge-img{width:360px;height:360px;border-radius:50%;overflow:hidden;display:block;box-shadow:0 12px 30px rgba(0,0,0,0.6);border:6px solid rgba(255,255,255,0.02)}
+    .badge-img img{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* right: content */
+    .right{flex:1;padding:12px 6px}
+    .brand{font-family:'Playfair Display',serif;font-size:48px;letter-spacing:4px;color:var(--accent);margin:0}
+    .brand-sub{margin-top:6px;color:var(--muted);font-weight:500;letter-spacing:2px}
+
+    .info{margin-top:18px;color:var(--muted);line-height:1.6}
+
+    .actions{margin-top:30px;display:flex;gap:16px;flex-wrap:wrap}
+    .action-link{padding:12px 18px;border-radius:10px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.05);font-weight:600;cursor:pointer;color:var(--muted);transition:0.2s}
+    .action-link:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+
+    /* modal */
+    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);z-index:50}
+    .modal .card{background:var(--card);padding:20px;border-radius:10px;max-width:700px;width:92%;color:var(--muted);box-shadow:0 12px 40px rgba(0,0,0,0.7)}
+    .modal .card h3{margin:0 0 8px 0;color:#fff}
+    .close{float:right;background:transparent;border:0;color:var(--muted);font-size:20px;cursor:pointer}
+
+    /* responsive */
+    @media (max-width:880px){
+      .wrap{flex-direction:column;align-items:center;padding:18px}
+      .left{flex-basis:unset}
+      .badge-img{width:300px;height:300px}
+      .brand{font-size:40px}
+    }
+    @media (max-width:520px){
+      .badge-img{width:220px;height:220px}
+      .brand{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <div class="wrap">
+    <div class="left">
+      <figure class="badge-img">
+        <img src="./photo_2025-10-08_14-24-06.jpg" alt="Universal logo">
+      </figure>
+    </div>
+
+    <div class="right">
+      <h1 class="brand">UNIVERSAL</h1>
+      <div class="brand-sub">Premium sifat</div>
+
+      <p class="info">Bizda nima istasangiz xamasi mavjud.Eng ko`p asrtimen lustra aboylar bizda bor,tanlovdan adashmang Universal bilan bo`ling... </p>
+
+      <div class="actions">
+        <a class="action-link" href="infarmatsiya.html" id="infarmatsiya">Maxsulotlar</a>
+        <a class="action-link" href="joylashuv.html" id="joylashuv">Bizning joylashuv</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for "Biz haqimizda" -->
+
+</body>
+</html>
